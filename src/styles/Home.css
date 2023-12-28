@@ -1,0 +1,124 @@
+.home {
+    width: 100%;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #163020;
+  }
+
+  .about {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #B6C4B6;
+    color: #163020;
+  }
+
+  .about h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 50px;
+    color: #163020;
+    height: 50px;
+    margin-bottom: 10px; 
+    
+  }
+
+  .about h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+
+    font-size: 80px;
+    color: #163020;
+    height: 50px;
+    margin-top: 0; 
+  }
+
+
+
+.about .prompt {
+  width: 40%;
+  font-size: 30px;
+}
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: #163020;
+}
+
+.skills {
+  font-size: 35px;
+  width: 100%;
+  text-align: left;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEF0E5;
+
+
+}
+
+.skills h1 {
+
+  color: #163020;
+  
+  align-items: center;
+
+}
+
+.skills .list {
+  list-style: none;
+  align-items: left;
+
+  width: 60%;
+  color: #163020;
+
+}
+
+.list span {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+    align-items: left;
+
+    color: #163020;
+
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: left;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}
+Github Button */
+.github-button {
+  color: #fff; /* Text color */
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.github-button:hover {
+  color: #0366d6; 
+}
