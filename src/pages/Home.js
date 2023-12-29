@@ -2,6 +2,8 @@ import TypeText from "../Components/TypeText";
 import GitHubButton from '../Components/GitHubButton';
 import LinkedInButton from '../Components/LinkedInButton';
 import "../styles/Home.css";
+import {FaTwitter} from "react-icons/fa"
+
 
 
 function Home() {
@@ -24,14 +26,16 @@ function Home() {
 
         </div>
       </div>
+      <div>
+    </div>
+
       <div className="skills">
         <h1> Skills</h1>
         <ol className="list">
           <li className="item">
             <h2> Front-End</h2>
             <span>
-              ReactJS, Angular, Redux, HTML, CSS, React Native, Flutter, NPM,
-              Ionic, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+              ReactJS, HTML, CSS, React Native, NPM, StyledComponents
             </span>
           </li>
           <li className="item">
@@ -43,7 +47,7 @@ function Home() {
           </li>
           <li className="item">
             <h2>Languages</h2>
-            <span>JavaScript, Java, Python, C#, C, C++, TypeScript, Go</span>
+            <span>JavaScript, Java, Python, C, Haskell, Prolog</span>
           </li>
         </ol>
       </div>

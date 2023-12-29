@@ -1,39 +1,42 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/NavBar.css";
-// import ReorderIcon from "@material-ui/icons/Reorder";
+import { CgMenu } from "react-icons/cg";
+
+
 
 function NavBar() {
-  // const [expandNavbar, setExpandNavbar] = useState(false);
 
-  // const location = useLocation();
+  const [expandedNavbar, setExpandNavbar] = useState(false)
+  const location = useLocation()
+  useEffect(() => {
+    setExpandNavbar(false);
 
-  // useEffect(() => {
-  //   setExpandNavbar(false);
-  // }, [location]);
-  //id={expandNavbar ? "open" : "close"}
+  }, [location]);
+
+
 
   return (
-    <div className="navbar" >
-      <div className="toggleButton">
-        <button>
-          
-        </button>
+    <nav className="sticky">
+      <div className="navbar" id={expandedNavbar ? "open" : "close"}>
+        <div className="container">
+          <label className="logo"> Karina Verma </label>
+          <button className="toggleButton"
+            onClick={() => 
+            {setExpandNavbar(prev => !prev)}}>
+            <CgMenu />
+          </button>
+        </div>
+        <div className="links">
+          <ul>
+            <li><Link to="/"> Home </Link></li>
+            <li><Link to="/projects"> Projects </Link></li>
+            <li><Link to="/experience"> Experience </Link></li>
+          </ul>
+        </div>
       </div>
-      <div className="links">
-        <Link to="/"> Home </Link>
-        <Link to="/projects"> Projects </Link>
-        <Link to="/experience"> Experience </Link>
-      </div>
-    </div>
+    </nav>
   );
 }
 
 export default NavBar;
-
-
-        //   onClick={() => {
-        //     setExpandNavbar((prev) => !prev);
-        //   }}
-        // >
-        //   {/* <ReorderIcon /> */}
